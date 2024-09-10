@@ -171,26 +171,28 @@
             background-color: yellow;
             font-size: 90px;
         }
-        .tooltip{
-            display: inline;
-            color: cadetblue;
-        }
-        .tooltip.tooltiptext{
-            display: inline;
-            background-color: black;
-        }
-        .tooltip.tooltiptext::after{
-            border: 10px;
-        }
-        .tooltip:hover .tooltip.tooltiptext{
-            visibility: visible;
-            
-        }
+     .tooltip{
+        visibility: hidden;
+        border: 1px solid rgb(192, 10, 10);
+        width:200px;
+        color: brown;
+        position: relative;
+        left:80px;
+        
+     }
+     .tool:hover .tooltip{
+        visibility: visible;
+        border-color: blueviolet;
+        color: blue;
+        border-radius: 10px;
+     }
 </style>
 </head>
 <body>
-    <div class="tooltip">hover me
-    <span class="tooltiptext">Tooltiptext</span>
+    <div class="tool">
+        Username:
+        <input type="text">
+    <div class="tooltip">Enter User Name</div>
 </div>
 <div class="main">
    <div class="main1">
